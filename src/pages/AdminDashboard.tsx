@@ -17,7 +17,7 @@ const mockMembers = [
     email: "oluwaseyi@afnanparfumes.com",
     membership_id: "APCB22385",
     tier: "basic",
-    created_at: "2024-01-15",
+    created_at: "2025-09-11",
   },
 ];
 
@@ -128,9 +128,9 @@ const AdminDashboard = () => {
                       <SelectValue placeholder="Select tier" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="basic">Basic ($1,300)</SelectItem>
-                      <SelectItem value="standard">Standard ($3,000)</SelectItem>
-                      <SelectItem value="premium">Premium ($6,500)</SelectItem>
+                      <SelectItem value="basic">Basic ($1,000)</SelectItem>
+                      <SelectItem value="standard">Standard ($2,300)</SelectItem>
+                      <SelectItem value="premium">Premium ($5,500)</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
