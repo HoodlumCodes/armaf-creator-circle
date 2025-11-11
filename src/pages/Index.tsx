@@ -101,7 +101,7 @@ const Login = () => {
           <CardHeader className="space-y-4 text-center">
             <div className="flex items-center justify-center gap-2 lg:hidden">
               <Crown className="h-8 w-8 text-primary" />
-              <h2 className="text-2xl font-bold">Afnan Prestige Circle</h2>
+              <h2 className="text-2xl font-bold">Armaf Creator Circle</h2>
             </div>
             <CardTitle className="text-2xl lg:text-3xl">Member Login</CardTitle>
             <CardDescription>
