@@ -36,20 +36,20 @@ const Login = () => {
     // Mock login - replace with Supabase later
     setTimeout(() => {
       if (
-        email === "oluwaseyi@afnanparfumes.com" &&
-        password === "APCB22385"
+        email === "felixsbf@sterlingparfumgroup.com" &&
+        password === "AMF22385"
       ) {
         // ✅ Save session
         localStorage.setItem(
           "member",
           JSON.stringify({
             email,
-            membership_id: "APCB22385",
+            membership_id: "AMF22385",
           })
         );
 
         toast({
-          title: "Welcome to Prestige Circle",
+          title: "Welcome to Armaf Creator Circle",
           description: "Login successful. Redirecting to your dashboard...",
         });
 

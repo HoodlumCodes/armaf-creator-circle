@@ -11,8 +11,8 @@ const PerfumePortfolio = lazy(() => import("./PerfumePortfolio"));
 // Mock data - replace with Supabase queries when connected
 const mockMember = {
   id: "1",
-  full_name: "Oluwaseyi Onaeko",
-  email: "oluwaseyi@afnanparfumes.com",
+  full_name: "Felix Amador",
+  email: "felixsbf@sterlingparfumgroup.com",
   membership_id: "APCB22385",
   affiliate_code: "AFF-APCB22385",
   tier: "basic",
@@ -21,73 +21,72 @@ const mockMember = {
 };
 
 const mockBenefits = [
-  "12 signature fragrances curated from Afnan's core collection",
-  "LED light and tripod mount for content creation",
-  "Access to 3 restocks per year at 40% off",
-  "5% commission on the Member's Afnan affiliate link",
-  "Placement on the seasonal PR calendar",
+  "20 signature fragrances curated from Armaf's core collection",
+  "Access to 3 replenishments per year at member rates of 23% discount",
+  "5% commission on the Member's affiliate access",
+  "Priority placement on the seasonal PR calendar",
 ];
 
 const mockPerfumes = [
   {
     name: "HISTORIC OLMEDA",
-    product_url: "https://afnan.com/products/historic-olmeda",
-    image: "https://afnan.com/cdn/shop/files/Historic-Olmeda-01.jpg?v=1727708625&width=1000",
+    product_url: "https://Armaf.com/products/historic-olmeda",
+    image: "https://Armaf.com/cdn/shop/files/Historic-Olmeda-01.jpg?v=1727708625&width=1000",
   },
   {
     name: "GIFT SET 9PM HOMME",
-    product_url: "https://afnan.com/products/gift-set-9pm-homme",
-    image: "https://afnan.com/cdn/shop/files/9PMfront_0f7ea5b3-2265-4c9c-b4c4-084c2fec5879_1.png?v=1729151250&width=1200",
+    product_url: "https://Armaf.com/products/gift-set-9pm-homme",
+    image: "https://Armaf.com/cdn/shop/files/9PMfront_0f7ea5b3-2265-4c9c-b4c4-084c2fec5879_1.png?v=1729151250&width=1200",
   },
   {
     name: "SUPREMACY NOIR",
-    product_url: "https://afnan.com/products/supremacy-noir",
-    image: "https://uk.afnan.com/cdn/shop/files/SupremacyNoir-Product-01.jpg?v=1728581941&width=1000",
+    product_url: "https://Armaf.com/products/supremacy-noir",
+    image: "https://uk.Armaf.com/cdn/shop/files/SupremacyNoir-Product-01.jpg?v=1728581941&width=1000",
   },
   {
     name: "SUPREMACY SILVER",
-    product_url: "https://afnan.com/products/supremacy-silver",
-    image: "https://uk.afnan.com/cdn/shop/files/SupremacySilver-Product-01.jpg?v=1728581995&width=1000",
+    product_url: "https://Armaf.com/products/supremacy-silver",
+    image: "https://uk.Armaf.com/cdn/shop/files/SupremacySilver-Product-01.jpg?v=1728581995&width=1000",
   },
   {
     name: "TURATHI ELECTRIC",
-    product_url: "https://afnan.com/products/turathi-electric",
-    image: "https://afnan.com/cdn/shop/files/TurathiElectric.png?v=1744872863&width=1200",
+    product_url: "https://Armaf.com/products/turathi-electric",
+    image: "https://Armaf.com/cdn/shop/files/TurathiElectric.png?v=1744872863&width=1200",
   },
   {
     name: "TURATHI BROWN HOMME",
-    product_url: "https://afnan.com/products/turathi-brown-homme",
-    image: "https://afnan.com/cdn/shop/files/Turathi_Brown-1.png?v=1742203739&width=1200",
+    product_url: "https://Armaf.com/products/turathi-brown-homme",
+    image: "https://Armaf.com/cdn/shop/files/Turathi_Brown-1.png?v=1742203739&width=1200",
   },
   {
     name: "9 PM ELIXIR",
-    product_url: "https://uk.afnan.com/products/9-pm-elixir?pr_prod_strat=jac&pr_rec_id=991765df8&pr_rec_pid=10300830515530&pr_ref_pid=9569721319754&pr_seq=uniform",
-    image: "https://uk.afnan.com/cdn/shop/files/9PM_ELIXIR-1.png?v=1753271109&width=600",
+    product_url: "https://uk.Armaf.com/products/9-pm-elixir?pr_prod_strat=jac&pr_rec_id=991765df8&pr_rec_pid=10300830515530&pr_ref_pid=9569721319754&pr_seq=uniform",
+    image: "https://uk.Armaf.com/cdn/shop/files/9PM_ELIXIR-1.png?v=1753271109&width=600",
   },
   {
     name: "PATCHOULI ON FIRE",
-    product_url: "https://afnan.com/products/patchouli-on-fire",
-    image: "https://afnan.com/cdn/shop/files/Patchouli-01.jpg?v=1727708579&width=1000",
+    product_url: "https://Armaf.com/products/patchouli-on-fire",
+    image: "https://Armaf.com/cdn/shop/files/Patchouli-01.jpg?v=1727708579&width=1000",
   },
   {
     name: "OUD RISING",
-    product_url: "https://afnan.com/products/oud-rising",
-    image: "https://afnan.com/cdn/shop/files/OudRisingFront_e9e320b1-415e-4bed-991a-0725916ad465.png?v=1727708879&width=1200",
+    product_url: "https://Armaf.com/products/oud-rising",
+    image: "https://Armaf.com/cdn/shop/files/OudRisingFront_e9e320b1-415e-4bed-991a-0725916ad465.png?v=1727708879&width=1200",
   },
   {
     name: "TOBACCO RUSH",
-    product_url: "https://afnan.com/products/tobacco-rush",
-    image: "https://afnan.com/cdn/shop/files/Tobacco-01.jpg?v=1727708596&width=1000",
+    product_url: "https://Armaf.com/products/tobacco-rush",
+    image: "https://Armaf.com/cdn/shop/files/Tobacco-01.jpg?v=1727708596&width=1000",
   },
   {
     name: "ORNAMENT POUR HOMME",
-    product_url: "https://afnan.com/products/ornament-pour-homme",
-    image: "https://afnan.com/cdn/shop/files/Ornament-Homme-Product-01.jpg?v=1727708110&width=1000",
+    product_url: "https://Armaf.com/products/ornament-pour-homme",
+    image: "https://Armaf.com/cdn/shop/files/Ornament-Homme-Product-01.jpg?v=1727708110&width=1000",
   },
   {
     name: "TRIBUTE BLUE",
-    product_url: "https://afnan.com/products/tribute-blue",
-    image: "https://afnan.com/cdn/shop/files/TributeBlue-Product-01.jpg?v=1727708287&width=1000",
+    product_url: "https://Armaf.com/products/tribute-blue",
+    image: "https://Armaf.com/cdn/shop/files/TributeBlue-Product-01.jpg?v=1727708287&width=1000",
   },
 ];
 
@@ -103,7 +102,7 @@ const Dashboard = () => {
   };
 
   const copyReferralLink = () => {
-    const link = `https://afnan.com/ref/${mockMember.affiliate_code}`;
+    const link = `https://Armaf.com/ref/${mockMember.affiliate_code}`;
     navigator.clipboard.writeText(link);
     toast({
       title: "Copied!",
@@ -145,7 +144,7 @@ const Dashboard = () => {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center gap-3">
               <Crown className="h-8 w-8 text-primary" />
-              <h1 className="text-2xl font-bold">Prestige Circle</h1>
+              <h1 className="text-2xl font-bold"> Armaf Creator Circle</h1>
             </div>
             <div className="flex items-center gap-4">
               <Button variant="outline" size="sm" onClick={handleSettings}>
@@ -200,7 +199,7 @@ const Dashboard = () => {
                 <label className="text-sm font-medium text-muted-foreground">Referral Link</label>
                 <div className="flex items-center gap-2 mt-1">
                   <code className="flex-1 px-3 py-2 bg-muted rounded text-sm truncate">
-                    afnan.com/ref/{mockMember.affiliate_code}
+                    Armaf.com/ref/{mockMember.affiliate_code}
                   </code>
                   <Button size="sm" variant="outline" onClick={copyReferralLink}>
                     <Copy className="h-4 w-4" />
@@ -238,15 +237,15 @@ const Dashboard = () => {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <CreditCard className="h-5 w-5 text-primary" />
-                Prestige Prepaid Card
+                Creator Prepaid Card
               </CardTitle>
-              <CardDescription>Your prestige prepaid balance</CardDescription>
+              <CardDescription>Your Creator prepaid balance</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="bg-gradient-hero rounded-xl p-6 text-white mb-4">
                 <div className="flex justify-between items-start mb-4">
                   <div>
-                    <h3 className="text-lg font-semibold">Afnan Prestige</h3>
+                    <h3 className="text-lg font-semibold">Armaf Creator</h3>
                     <p className="text-sm opacity-75">Prepaid Card</p>
                   </div>
                   <Crown className="h-8 w-8 text-primary-glow" />
