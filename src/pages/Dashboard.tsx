@@ -13,8 +13,8 @@ const mockMember = {
   id: "1",
   full_name: "Felix Amador",
   email: "felixsbf@sterlingparfumgroup.com",
-  membership_id: "APCB22385",
-  affiliate_code: "AFF-APCB22385",
+  membership_id: "AMF22385",
+  affiliate_code: "AFF-AMF22385",
   tier: "basic",
   commissions_earned: 0,
   pending_payout: 0,
@@ -29,64 +29,104 @@ const mockBenefits = [
 
 const mockPerfumes = [
   {
-    name: "HISTORIC OLMEDA",
-    product_url: "https://Armaf.com/products/historic-olmeda",
-    image: "https://Armaf.com/cdn/shop/files/Historic-Olmeda-01.jpg?v=1727708625&width=1000",
+    name: "CLUB DE NUIT PRIVATE KEY TO MY DREAMS",
+    product_url: "https://armaf.com/products/club-de-nuit-private-key-to-my-dreams-100ml?_pos=1&_psq=private&_ss=e&_v=1.0",
+    image: "https://armaf.com/cdn/shop/files/image-2023-10-02T104400.330.jpg?v=1739111609&width=1100",
   },
   {
-    name: "GIFT SET 9PM HOMME",
-    product_url: "https://Armaf.com/products/gift-set-9pm-homme",
-    image: "https://Armaf.com/cdn/shop/files/9PMfront_0f7ea5b3-2265-4c9c-b4c4-084c2fec5879_1.png?v=1729151250&width=1200",
+    name: "COOL ACE",
+    product_url: "https://armaf.com/products/cool-ace-edp-spr?_pos=1&_psq=cool&_ss=e&_v=1.0",
+    image: "https://armaf.com/cdn/shop/files/Untitleddesign_90.png?v=1749676528&width=1100",
   },
   {
-    name: "SUPREMACY NOIR",
-    product_url: "https://Armaf.com/products/supremacy-noir",
-    image: "https://uk.Armaf.com/cdn/shop/files/SupremacyNoir-Product-01.jpg?v=1728581941&width=1000",
+    name: "MATCH POINT",
+    product_url: "https://armaf.com/products/armaf-match-point?_pos=1&_psq=Match+Po&_ss=e&_v=1.0",
+    image: "https://armaf.com/cdn/shop/files/Untitleddesign_92.png?v=1750705120&width=1100",
   },
   {
-    name: "SUPREMACY SILVER",
-    product_url: "https://Armaf.com/products/supremacy-silver",
-    image: "https://uk.Armaf.com/cdn/shop/files/SupremacySilver-Product-01.jpg?v=1728581995&width=1000",
+    name: "CLUB DE NUIT UNTOLD",
+    product_url: "https://armaf.com/products/armaf-club-de-nuit-untold?_pos=1&_psq=untold&_ss=e&_v=1.0",
+    image: "https://armaf.com/cdn/shop/files/image-2023-05-04T091929.691_a7f76f3e-815b-4295-b8d9-6f89d78f1795.jpg?v=1752061921&width=1100",
   },
   {
-    name: "TURATHI ELECTRIC",
-    product_url: "https://Armaf.com/products/turathi-electric",
-    image: "https://Armaf.com/cdn/shop/files/TurathiElectric.png?v=1744872863&width=1200",
+    name: "CLUB DE NUIT PRIVATE KEY TO MY LOVE",
+    product_url: "https://armaf.com/products/club-de-nuit-private-key-to-my-love-100ml?_pos=3&_psq=private+key&_ss=e&_v=1.0",
+    image: "https://armaf.com/cdn/shop/files/60.png?v=1758575805&width=1100",
   },
   {
-    name: "TURATHI BROWN HOMME",
-    product_url: "https://Armaf.com/products/turathi-brown-homme",
-    image: "https://Armaf.com/cdn/shop/files/Turathi_Brown-1.png?v=1742203739&width=1200",
+    name: "BUCEPHALUS NO. IX",
+    product_url: "https://armaf.com/products/bucephalus-no-ix?_pos=3&_psq=Bucep&_ss=e&_v=1.0",
+    image: "https://armaf.com/cdn/shop/files/BUCEPHALUSNO.IX100ML_ARMAFNICHESERIES_FIF_a9ae31db-538c-44a4-8afc-c5290af8a35e.jpg?v=1739111277&width=1100",
   },
   {
-    name: "9 PM ELIXIR",
-    product_url: "https://uk.Armaf.com/products/9-pm-elixir?pr_prod_strat=jac&pr_rec_id=991765df8&pr_rec_pid=10300830515530&pr_ref_pid=9569721319754&pr_seq=uniform",
-    image: "https://uk.Armaf.com/cdn/shop/files/9PM_ELIXIR-1.png?v=1753271109&width=600",
+    name: "CLUB DE NUIT MALEKA",
+    product_url: "https://armaf.com/products/club-de-nuit-maleka?_pos=1&_psq=Mal&_ss=e&_v=1.0",
+    image: "https://armaf.com/cdn/shop/files/CDNMALEKA_900x_678cfb46-d6f1-4ca5-8c50-b3c2b439ce5d.webp?v=1762298770&width=1100",
   },
   {
-    name: "PATCHOULI ON FIRE",
-    product_url: "https://Armaf.com/products/patchouli-on-fire",
-    image: "https://Armaf.com/cdn/shop/files/Patchouli-01.jpg?v=1727708579&width=1000",
+    name: "BUCEPHALUS NO. X",
+    product_url: "https://armaf.com/products/bucephalus-no-x-parfum-uae?_pos=4&_psq=buce&_ss=e&_v=1.0",
+    image: "https://armaf.com/cdn/shop/files/BUCEPHALUSNO.X100ML_ARMAFNICHESERIES_FIF_29e7313e-8179-4da3-830e-0c3731523319.jpg?v=1739111276&width=1100",
   },
   {
-    name: "OUD RISING",
-    product_url: "https://Armaf.com/products/oud-rising",
-    image: "https://Armaf.com/cdn/shop/files/OudRisingFront_e9e320b1-415e-4bed-991a-0725916ad465.png?v=1727708879&width=1200",
+    name: "ODYSSEY SPECTRA BLUE EDITION",
+    product_url: "https://armaf.com/products/odyssey-spectra-blue-edition?_pos=2&_psq=spectra&_ss=e&_v=1.0",
+    image: "https://armaf.com/cdn/shop/files/GS-OdysseyLimoni_PhotoGrid.pngDisplayingGS-OdysseyLimoni_PhotoGrid.png._11.png?v=1757027596&width=1100",
   },
   {
-    name: "TOBACCO RUSH",
-    product_url: "https://Armaf.com/products/tobacco-rush",
-    image: "https://Armaf.com/cdn/shop/files/Tobacco-01.jpg?v=1727708596&width=1000",
+    name: "BEACH PARTY",
+    product_url: "https://armaf.com/products/beach-party-spr",
+    image: "https://armaf.com/cdn/shop/files/armafbeach.png?v=1744396383&width=1100",
   },
   {
-    name: "ORNAMENT POUR HOMME",
-    product_url: "https://Armaf.com/products/ornament-pour-homme",
-    image: "https://Armaf.com/cdn/shop/files/Ornament-Homme-Product-01.jpg?v=1727708110&width=1000",
+    name: "ODYSSEY MARSHMALLOW",
+    product_url: "https://armaf.com/products/odyssey-marshmallow?_pos=6&_sid=4631b0f8c&_ss=r",
+    image: "https://armaf.com/cdn/shop/files/Untitleddesign-2025-08-30T012944.720.png?v=1756499463&width=1100",
   },
   {
-    name: "TRIBUTE BLUE",
-    product_url: "https://Armaf.com/products/tribute-blue",
-    image: "https://Armaf.com/cdn/shop/files/TributeBlue-Product-01.jpg?v=1727708287&width=1000",
+    name: "ISLAND BREEZE",
+    product_url: "https://armaf.com/products/island-breeze?_pos=1&_psq=breeze&_ss=e&_v=1.0",
+    image: "https://armaf.com/cdn/shop/files/islandbliss_900x_f77557f2-593e-41e6-85fb-8facf61de479.webp?v=1762464766&width=1100",
+  },
+  {
+    name: "PERLE D'OR",
+    product_url: "https://armaf.com/products/perle-dor?_pos=1&_psq=Perle&_ss=e&_v=1.0",
+    image: "https://armaf.com/cdn/shop/files/Untitleddesign-2025-09-11T040347.556.png?v=1757545447&width=1100",
+  },
+  {
+    name: "SCENTASY NOIR DE PECHE",
+    product_url: "https://armaf.com/products/scentasy-noir-de-peche?_pos=1&_sid=38ef15c77&_ss=r",
+    image: "https://armaf.com/cdn/shop/files/Scentasy.jpg?v=1761858557&width=1100",
+  },
+    {
+    name: "CLUB DE NUIT PRECIEUX IV",
+    product_url: "https://armaf.com/products/club-de-nuit-precieux-iv?_pos=1&_sid=8694018f7&_ss=r",
+    image: "https://armaf.com/cdn/shop/files/Untitleddesign-2025-08-29T213634.817.png?v=1756485507&width=1100",
+  },
+  {
+    name: "MISS ARMAF GRANDEUR",
+    product_url: "https://armaf.com/products/miss-armaf-grandeur?_pos=4&_psq=Miss&_ss=e&_v=1.0",
+    image: "https://armaf.com/cdn/shop/files/Untitled_design_-_2025-09-24T035354.792.png?v=1758668054&width=1100",
+  },
+    {
+    name: "ODYSSEY CANDEE SPECIAL EDITION",
+    product_url: "https://armaf.com/products/odyssey-candee-special-edition?_pos=1&_psq=Odyssey+Can&_ss=e&_v=1.0",
+    image: "https://armaf.com/cdn/shop/files/armafbeach_11.png?v=1744408386&width=1100",
+  },
+  {
+    name: "MISS ARMAF CHIC",
+    product_url: "https://armaf.com/products/miss-armaf-chic?_pos=2&_psq=Miss&_ss=e&_v=1.0",
+    image: "https://armaf.com/cdn/shop/files/Chic_900x_851caa25-6ea8-4604-8c57-9fab2a4ca2c4.webp?v=1762471912&width=1100",
+  },
+    {
+    name: "CHECKMATE QUEEN",
+    product_url: "https://armaf.com/products/checkmate-queen?_pos=1&_psq=Queen&_ss=e&_v=1.0",
+    image: "https://armaf.com/cdn/shop/files/Siteweb-QueenCheckMate-ezgif.com-webp-to-jpg-converter.jpg?v=1759860344&width=1100",
+  },
+  {
+    name: "MISS ARMAF MAGNIFIQ",
+    product_url: "https://armaf.com/products/miss-armaf-magnifiq?_pos=5&_psq=Magni&_ss=e&_v=1.0",
+    image: "https://armaf.com/cdn/shop/files/Untitled_design_-_2025-09-24T035821.025.png?v=1758668332&width=1100",
   },
 ];
 
@@ -143,8 +183,9 @@ const Dashboard = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center gap-3">
-              <Crown className="h-8 w-8 text-primary" />
-              <h1 className="text-2xl font-bold"> Armaf Creator Circle</h1>
+              <img src="https://armaf.com/cdn/shop/files/logo.png?v=1713847116&width=50"
+              alt="Logo" />
+              <h1 className="text-2xl font-bold"> Creator Circle</h1>
             </div>
             <div className="flex items-center gap-4">
               <Button variant="outline" size="sm" onClick={handleSettings}>

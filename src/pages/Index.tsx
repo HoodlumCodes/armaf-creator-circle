@@ -81,8 +81,9 @@ const Login = () => {
         </div>
         <div className="relative z-10 flex flex-col justify-center px-12 text-white">
           <div className="flex items-center gap-3 mb-8">
-            <Crown className="h-12 w-12 text-primary-glow" />
-            <h1 className="text-4xl font-bold">Afnan Prestige Circle</h1>
+            <img src="https://armaf.com/cdn/shop/files/logo.png?v=1713847116&width=50"
+              alt="Logo" />
+            <h1 className="text-4xl font-bold">Armaf Creator Circle</h1>
           </div>
           <p className="text-xl mb-4 opacity-90">
             Exclusive membership portal for luxury fragrance connoisseurs
